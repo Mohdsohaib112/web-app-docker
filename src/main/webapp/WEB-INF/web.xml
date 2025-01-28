@@ -2,12 +2,12 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
     version="4.0">
 
-    <display-name>🌟 Modern Spring MVC Application 🌟</display-name>
-    <description>🌈 A clean and colorful Spring MVC web application 🌈</description>
+    <display-name>Modern Spring MVC Application</display-name>
+    <description>A clean and colorful Spring MVC web application</description>
 
-    <!-- 🌟 DispatcherServlet Configuration -->
+    <!-- DispatcherServlet Configuration -->
     <servlet>
-        <servlet-name>🌼 dispatcher 🌼</servlet-name>
+        <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -16,34 +16,34 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <!-- 🎨 Servlet Mapping -->
+    <!-- Servlet Mapping -->
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <!-- 🌟 ContextLoaderListener for Root Application Context -->
+    <!-- ContextLoaderListener for Root Application Context -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-    <!-- 🎨 Application Context Configuration -->
+    <!-- Application Context Configuration -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/spring/application-context.xml</param-value>
     </context-param>
 
-    <!-- 🌈 Welcome File Configuration -->
+    <!-- Welcome File Configuration -->
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <!-- ⏳ Session Timeout -->
+    <!-- Session Timeout -->
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
 
-    <!-- 🚨 Error Page Handling -->
+    <!-- Error Page Handling -->
     <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/views/error/404.jsp</location>
@@ -53,9 +53,9 @@
         <location>/WEB-INF/views/error/500.jsp</location>
     </error-page>
 
-    <!-- 🌟 Additional Servlets for API Handling -->
+    <!-- Additional Servlets for API Handling -->
     <servlet>
-        <servlet-name>🌼 api-dispatcher 🌼</servlet-name>
+        <servlet-name>api-dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -69,7 +69,7 @@
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
 
-    <!-- 🌈 Custom MIME Mappings -->
+    <!-- Custom MIME Mappings -->
     <mime-mapping>
         <extension>json</extension>
         <mime-type>application/json</mime-type>
@@ -80,9 +80,9 @@
         <mime-type>application/xml</mime-type>
     </mime-mapping>
 
-    <!-- 🎨 Filter Configuration -->
+    <!-- Filter Configuration -->
     <filter>
-        <filter-name>🌟 corsFilter 🌟</filter-name>
+        <filter-name>corsFilter</filter-name>
         <filter-class>org.springframework.web.filter.CorsFilter</filter-class>
     </filter>
 
@@ -91,7 +91,7 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- 🔒 Security Constraints -->
+    <!-- Security Constraints -->
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>SecureApp</web-resource-name>
@@ -102,7 +102,7 @@
         </auth-constraint>
     </security-constraint>
 
-    <!-- 🔐 Login Configuration -->
+    <!-- Login Configuration -->
     <login-config>
         <auth-method>FORM</auth-method>
         <form-login-config>
@@ -111,7 +111,7 @@
         </form-login-config>
     </login-config>
 
-    <!-- 🌟 Security Roles -->
+    <!-- Security Roles -->
     <security-role>
         <role-name>USER</role-name>
     </security-role>
