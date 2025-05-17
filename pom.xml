@@ -20,7 +20,7 @@
 	
 	<properties>
 		
-		<sonar.host.url>http://3.12.166.12:2327</sonar.host.url>
+		<sonar.host.url>http://52.14.13.241:2327</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>8466849626@Us</sonar.password> 
 		<spring.version>5.0.7.RELEASE</spring.version>
